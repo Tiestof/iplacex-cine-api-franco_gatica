@@ -2,17 +2,17 @@ import express, { Router } from 'express'
 import peliculaController from './peliculaController.js'
 
 
-const peliculaRoute = express.Router()
+const peliculaRoutes = express.Router()
 
-peliculaRoute.post('/pelicula', peliculaController.handleInsertPeliculaRequest)
+peliculaRoutes.post('/pelicula', peliculaController.handleInsertPeliculaRequest)
 
-peliculaRoute.get('/peliculas', peliculaController.handleGetPeliculasRequest)
+peliculaRoutes.get('/peliculas', peliculaController.handleGetPeliculasRequest)
 
-peliculaRoute.get('/pelicula/:id', peliculaController.handleGetPeliculaByIdRequest)
+peliculaRoutes.get('/pelicula/:id', peliculaController.handleGetPeliculaByIdRequest)
 
-peliculaRoute.put('/pelicula/:id', peliculaController.handleUpdatePeliculaByIdRequest)
+peliculaRoutes.put('/pelicula/:id', peliculaController.handleUpdatePeliculaByIdRequest)
 
-peliculaRoute.delete('/pelicula/:id', peliculaController.handleDeletePeliculaByIdRequest)
+peliculaRoutes.delete('/pelicula/:id', peliculaController.handleDeletePeliculaByIdRequest)
 
 
-export default peliculaRoute;
+export default peliculaRoutes;
