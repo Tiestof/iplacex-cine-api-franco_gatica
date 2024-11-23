@@ -1,8 +1,8 @@
 import express, { Router, urlencoded } from 'express'
 import cors from 'cors'
-import client from './src/common/db.js'
-import pelicularoutes from './src/pelicula/PeliculaRoutes.js'
-import actorRoutes from './src/actor/actorRoutes.js'
+import pelicularoutes from './pelicula/peliculaRoutes.js';
+import actorRoutes from './actor/actorRoutes.js';
+import client from './common/db.js';
 
 const PORTS = 3000 || 4000;
 const app = express()

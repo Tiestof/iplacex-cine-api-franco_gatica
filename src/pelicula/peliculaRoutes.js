@@ -15,4 +15,4 @@ pelicularoutes.put('/pelicula/:id', peliculaController.handleUpdatePeliculaByIdR
 pelicularoutes.delete('/pelicula/:id', peliculaController.handleDeletePeliculaByIdRequest)
 
 
-export default pelicularoutes
+export default pelicularoutes;
