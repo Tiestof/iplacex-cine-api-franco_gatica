@@ -4,7 +4,7 @@ import client from './src/common/db.js'
 import pelicularoutes from './src/pelicula/PeliculaRoutes.js'
 import actorRoutes from './src/actor/actorRoutes.js'
 
-const PORTS = 3000 || 4000
+const PORTS = 3000 || 4000;
 const app = express()
 
 app.use(express.json())
